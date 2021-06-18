@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <link rel="stylesheet" href="../css_includes/global_z.css"> -->
+  <style type="text/css">
+    table {
+      margin:auto;
+    }
+    img.whatever {
+      padding:0px;
+      margin:0px;
+      border:0px;
+      height:0px;
+      width:1px;
+      display:block;
+    }
+    img.PlayCard {
+      width:69px;
+      height:100px;
+    }
+  </style>
+
+  <!-- PASTED + MODIFIED FROM ESZTER'S CONFIRMATION SYSTEM -->
+  <script language="javascript" type="text/javascript">
+    function randomString() {
+
+      var chars = '0123456789abcdefghiklmnopqrstuvwxyz';
+      var string_length = 8;
+      var randomstring = '';
+
+      for (var i=0; i<string_length; i++) {
+
+        var rnum = Math.floor(Math.random() * chars.length);
+        randomstring += chars.substring(rnum,rnum+1);
+      }
+
+      document.randform.randomfield.value = randomstring;
+    }
+</script>
+
+</head>
+
+
+<body>
+  <div style="width: 45em; margin-top:5em">
+    
+    <h3>Amazon Mechanical Turk Identification</h3>
+
+    <p>
+      On this page, you'll enter your MTurk Worker ID and obtain an identification code which we'll use to validate your work.
+    </p>
+    <p>
+      To make sure that we compensate you for your time as quickly as possible, please be sure to <strong>enter the identifier you generate both into the box below and back at the MTurk webpage that directed you here.</strong>
+    </p>
+    
+    <table>
+      <tbody>
+        
+        <!-- ENTER AMAZON WORKER ID -->
+        <tr>
+          <td>Please enter your Amazon Worker ID:</td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="worker_id" rows="1" cols="20" class="obligatory"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><label class="error" for="worker_id"></label><hr></td>
+        </tr>
+
+
+        <!-- GENERATE A UNIQUE IDENTIFIER -->
+        <tr>
+          <td>Click on the button below to create your unique identifier:</td>
+        </tr>
+        <tr>
+          <td>
+            <form name="randform">
+              <input type="button" value="create identifier" onclick="randomString();">&nbsp;
+              <input type="text" name="randomfield" value="">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><label class="error" for="randomfield"></label><hr></td>
+        </tr>
+
+
+        <!-- ENTER YOUR UNIQUE IDENTIFIER -->
+        <tr>
+          <td>Copy and paste the identifier above into the box below<br>(and also paste it back at MTurk after you submit):</td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="identifier" rows="1" cols="8" class="obligatory"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="error" for="identifier"></label><hr>
+          </td>
+        </tr>
+
+        <!-- END VALIDATION PART -->
+      </tbody>
+    </table>
+
+
+    <p>
+      Click below to submit your responses. 
+      After submitting, please wait until the results are sent to the server (you'll see a message once they're sent).
+    </p>
+
+    <strong>Be sure to paste your identifier into the MTurk page!</strong>
+    </p>
+
+
+
+  </div>
+
+</body>
+</html>
+
+
+
+   
+ 
+

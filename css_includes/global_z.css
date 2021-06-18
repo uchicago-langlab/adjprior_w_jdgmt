@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+body {
+  padding: 10px;
+  font-size: 12pt;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+
+/* BELOW HERE IS FROM BEFORE  */
+body{
+  margin-top:0em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Sen1{
+  font-size: 20px;
+  /* font-size: 2em; */
+}
+
+.Sen2{
+  font-size: 20px;
+  /* font-size: 2em; */
+}
+
