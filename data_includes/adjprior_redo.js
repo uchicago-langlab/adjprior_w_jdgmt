@@ -59,7 +59,7 @@ var items = [
             consentRequired: false,
             transfer: "click",
             continueMessage: "Click here to continue",
-            html: "<div><p>This is the first practice trial.</p>\
+            html: "<div><p>This is the first practice item.</p>\
             <p>On the next screen, you will see some images of pears. Your task is to decide which of the images is the most likely in the world. You can only choose one.</p>",
     }],
 
@@ -81,7 +81,7 @@ var items = [
             consentRequired: false,
             transfer: "click",
             continueMessage: "Click here to continue",
-            html: "<div><p>This is the second practice trial.</p>\
+            html: "<div><p>This is the second practice item.</p>\
             <p>On the next screen, you will see some images of triangles. Your task is to decide which of the images is the most likely in the world. You can only choose one.</p>",
     }],
                 
