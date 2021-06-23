@@ -1,4 +1,4 @@
-var shuffleSequence = seq('consent', 'intro', 'practice1intro', 'practice1', 'practice2intro', 'practice2', 'end_practice', rshuffle(startsWith('item-')), 'questionnaire', 'exit');
+var shuffleSequence = seq('test', 'consent', 'intro', 'practice1intro', 'practice1', 'practice2intro', 'practice2', 'end_practice', rshuffle(startsWith('item-')), 'questionnaire', 'exit');
 
 // rshuffle(rshuffle(startsWith('shape_')), rshuffle(startsWith('artifact_')))
 
@@ -105,6 +105,13 @@ var items = [
             continueMessage: "Click here to begin the experiment.",
             html: "<div><p>You have finished the practice section.</p><p>You will not receive any more instructions for the rest of the study. For each sentence you will see, please <b>choose the image you think is the most likely in the world. </b></p>",
     }],
+
+    [["test",9999], "MultiSlider", {s: "John is an alien. On his planet, some are glorps and some are non-glorps.", 
+                                    s2: "Anyone may have a dord. If John is a glorp, he will keep his dord safe.", 
+                                    html1: <img src="https://github.com/uchicago-langlab/gradable_adjs/blob/main/materials/fillers/garlic1.jpeg?raw=true" width="200px"/>, 
+                                    html: <img src="https://github.com/uchicago-langlab/gradable_adjs/blob/main/materials/fillers/garlic1.jpeg?raw=true" width="200px"/>, 
+                                    html3:""}
+    ],
                 
                
      // Green cube
