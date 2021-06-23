@@ -25,6 +25,41 @@ var defaults = [
         hideProgressBar: true,
         continueOnReturn: true
     },
+    "Vorm", {
+        hideProgressBar: true,
+        continueOnReturn: true,
+        saveReactionTime: true
+    },
+    "Scale_New", {
+        startValue: 0,  
+        endValue: 100,
+        hideProgressBar: true,
+        scaleLabels: true,
+        leftLabel: "(Totally unlikely)", rightLabel: "(Totally likely)"
+    },
+    "Scale_NoButton", {
+        startValue: 0,
+        endValue: 100,
+        hideProgressBar: true
+      //  leftLabel: "Very unlikely", rightLabel: "Very likely"
+    },
+    "Scale_NoButton2", {
+        startValue: 0,
+        endValue: 100,
+        hideProgressBar: true
+      //  leftLabel: "Very unlikely", rightLabel: "Very likely" 
+    },
+    "StaticSentence",{
+        hideProgressBar: true
+    },
+    "StaticSentence2",{
+        hideProgressBar: true
+    },
+    "MultiSlider",{
+        children: ["StaticSentence","StaticSentence2","Scale_NoButton","Scale_New", "Vorm"],
+        triggers: [4],
+        hideProgressBar: true
+    }
 ];
 
 
